@@ -22,9 +22,57 @@ public class RefRepetitivas {
             cont++;            
         }        
     }
+    public static void aiNumeroPrimo() {
+        System.out.println("Ingrese un numero:");
+        int num=leerT.nextInt();
+        int cont=1;
+        int cantDiv=0;
+        while (cont<=num) {
+            if (num%cont==0) {
+                cantDiv++;
+            }
+            cont++;
+        }
+        if (cantDiv==2) {
+            System.out.println("El numero"+num+"es primo");
+        }else {
+            System.out.println("El numero"+num+"no es primo");
+        }
+
+    }
+    
+    public static void numerosprimos() {
+        System.out.println("Ingrese el limite Maximo:");
+        int num=leerT.nextInt();
+        int numX=1;
+        while (numX<=num) {
+            int cantDiv=0;
+            int cont=1;
+            while (cont<=numX) {
+                if (cantDiv>2) break;
+                if (numX%cont==0) {
+                    cantDiv++;//1
+                    
+                }
+                if (cantDiv==2) {
+                    System.out.println(numX);
+                    }
+                }
+                
+            }
+            numX=numX+1;
+        }
+        
+    
+        
+  
+    
     
 
     public static void main(String[] args) {
+        //serieFibonaci();
+        //fibonaciN();
+        
         
     }
 }
